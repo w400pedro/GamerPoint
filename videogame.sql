@@ -1,53 +1,69 @@
--- phpMyAdmin SQL Dump
--- version 5.1.3
--- https://www.phpmyadmin.net/
---
--- Host: localhost
--- Tempo de geração: 22/04/2022 às 16:13
--- Versão do servidor: 5.7.24-0ubuntu0.18.04.1
--- Versão do PHP: 7.3.33-1+ubuntu18.04.1+deb.sury.org+1
+/*CREATE DATABASE VIDEOGAME;*/
+DROP TABLE item_usuario;
+DROP TABLE item;
+DROP TABLE usuario;
+DROP TABLE games;
+DROP TABLE genero;
+DROP TABLE categoria;
 
+CREATE TABLE genero (
+    id int not null AUTO_INCREMENT,
+    nome varchar(100) not null,
+    primary key (id)
+);
 
+CREATE TABLE categoria (
+  id int not null AUTO_INCREMENT, 
+  nome varchar(100) not null,
+  primary key (id)
+);
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+CREATE TABLE usuario (
+  id int not null AUTO_INCREMENT,
+  nome varchar(100) not null,
+  email varchar(200) not null,
+  primary key (id)
+);
 
+CREATE TABLE item (
+  id int not null AUTO_INCREMENT,
+  nome varchar(100) not null,
+  categoria int not null,
+  preco varchar(100) not null,
+  foreign key (categoria) references categoria(id),
+  primary key (id)
+);
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+CREATE TABLE games (
+  id int NOT NULL AUTO_INCREMENT,
+  nome varchar(100) NOT NULL,
+  lancamento date NOT NULL,
+  desenvolvedora varchar(100) NOT NULL,
+  genero int NOT NULL,
+  foreign key (genero) references genero(id),
+  primary key(id)
+);
 
---
--- Banco de dados: `videogame`
--- CREATE DATABASE videogame;
--- 
+CREATE TABLE itemusuario (
+  item int not null,
+  usuario int not null,
+  qtd varchar(3) not null DEFAULT 1,
+  foreign key (item) references item(id),
+  foreign key (usuario) references usuario(id),
+  primary key (usuario, item)
+);
 
--- --------------------------------------------------------
+insert into genero (nome) values
+  ('RPG'), ('MMORPG'), ('FPS'), ('Ação'), ('Aventura'), ('TPS'), ('Corrida'), ('Esporte'), ('Arcade');
 
---
--- Estrutura para tabela `games`
---
+insert into categoria (nome) values
+  ('Jogos'), ('Consoles'), ('Canecas'), ('Camisas');
 
-CREATE TABLE `games` (
-  `ID` int(11) NOT NULL,
-  `nome` varchar(100) NOT NULL,
-  `lancamento` date NOT NULL,
-  `desenvolvedora` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+insert into item (nome, categoria, preco) values
+  ('Playstation 5', 2, 'R$4499,00'), ('Camisa Kratos', 4, 'R$49,99'), ('Caneca Super Mario', 3, 'R$79,99'), ('Nintendo Switch', 2, 'R$2299,00'), ('Xbox Series X', 2, 'R$4499,00');
 
---
--- Índices para tabelas despejadas
---
+insert into usuario (nome, email) values
+  ('Felipe Santos Almeida', 'felipaocomepao@hotmail.com'), ('Julio Santana Guimarães', 'juliosa@gmail.com'), ('João Pedro Garcia de Morais', 'pedrojacks47@hotmail.comhihiihi');
 
---
--- Índices de tabela `games`
---
-ALTER TABLE `games`
-  ADD PRIMARY KEY (`ID`);
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+insert into itemusuario (item, usuario, qtd) values
+    (1, 2, '1'), (1, 3, '2'), (3, 1, '1');
