@@ -1,0 +1,64 @@
+CRITICAL - 2022-05-13 19:54:51 --> Too few arguments to function App\Controllers\Home::cadastrarusuario(), 0 passed in C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-13 22:49:53 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-13 22:50:18 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-13 22:52:02 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-13 22:57:55 --> Array to string conversion
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\Home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xamppPHP8\\ht...', 15)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-13 22:58:13 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-13 23:02:40 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-13 23:03:05 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-13 23:23:11 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}

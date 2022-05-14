@@ -1,0 +1,98 @@
+CRITICAL - 2022-05-14 00:12:53 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-14 00:13:41 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-14 00:14:03 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-14 00:14:22 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-14 00:14:25 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-14 00:16:37 --> Class "App\Models\userModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-14 00:27:05 --> Class "App\Models\usersModel\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-14 00:28:16 --> Class "App\Model\UsersModel" not found
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\Home->cadastrarusuario()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-14 01:15:43 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-14 01:15:53 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-14 01:17:00 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-14 01:17:04 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-14 01:17:17 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-14 01:17:19 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-14 03:23:15 --> Undefined property: App\Controllers\userController::$session
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\userController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xamppPHP8\\ht...', 26)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\userController->cadastrarusuario()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\userController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-14 03:25:55 --> Undefined property: App\Controllers\userController::$session
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\userController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xamppPHP8\\ht...', 26)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\userController->cadastrarusuario()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\userController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-14 03:25:59 --> Undefined property: App\Controllers\userController::$session
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\userController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xamppPHP8\\ht...', 26)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\userController->cadastrarusuario()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\userController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}

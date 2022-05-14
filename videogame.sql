@@ -1,12 +1,12 @@
 /*CREATE DATABASE VIDEOGAME;*/
-DROP TABLE item_usuario;
+DROP TABLE itemusuario;
 DROP TABLE item;
 DROP TABLE usuario;
-DROP TABLE games;
-DROP TABLE genero;
 DROP TABLE categoria;
+DROP TABLE desenvolvedora;
+DROP TABLE gamegenero;
 
-CREATE TABLE genero (
+CREATE TABLE gamegenero (
     id int not null AUTO_INCREMENT,
     nome varchar(100) not null,
     primary key (id)
@@ -14,6 +14,12 @@ CREATE TABLE genero (
 
 CREATE TABLE categoria (
   id int not null AUTO_INCREMENT, 
+  nome varchar(100) not null,
+  primary key (id)
+);
+
+CREATE TABLE desenvolvedora (
+  id int not null AUTO_INCREMENT,
   nome varchar(100) not null,
   primary key (id)
 );
@@ -30,18 +36,12 @@ CREATE TABLE item (
   nome varchar(100) not null,
   categoria int not null,
   preco varchar(100) not null,
+  gamegenero int,
+  desenvolvedora int,
   foreign key (categoria) references categoria(id),
+  foreign key (gamegenero) references gamegenero(id),
+  foreign key (desenvolvedora) references desenvolvedora(id),
   primary key (id)
-);
-
-CREATE TABLE games (
-  id int NOT NULL AUTO_INCREMENT,
-  nome varchar(100) NOT NULL,
-  lancamento date NOT NULL,
-  desenvolvedora varchar(100) NOT NULL,
-  genero int NOT NULL,
-  foreign key (genero) references genero(id),
-  primary key(id)
 );
 
 CREATE TABLE itemusuario (
@@ -53,17 +53,23 @@ CREATE TABLE itemusuario (
   primary key (usuario, item)
 );
 
-insert into genero (nome) values
+insert into gamegenero (nome) values
   ('RPG'), ('MMORPG'), ('FPS'), ('Ação'), ('Aventura'), ('TPS'), ('Corrida'), ('Esporte'), ('Arcade');
 
 insert into categoria (nome) values
   ('Jogos'), ('Consoles'), ('Canecas'), ('Camisas');
 
+  insert into desenvolvedora (nome) values
+  ('Naughty Dog'), ('Santa Monica');
+
 insert into item (nome, categoria, preco) values
-  ('Playstation 5', 2, 'R$4499,00'), ('Camisa Kratos', 4, 'R$49,99'), ('Caneca Super Mario', 3, 'R$79,99'), ('Nintendo Switch', 2, 'R$2299,00'), ('Xbox Series X', 2, 'R$4499,00');
+  ('Playstation 5', 2, 'R$4499.00'), ('Camisa Kratos', 4, 'R$49.99'), ('Caneca Super Mario', 3, 'R$79.99'), ('Nintendo Switch', 2, 'R$2299.00'), ('Xbox Series X', 2, 'R$4499.00');
+
+insert into item (nome, categoria, preco, gamegenero, desenvolvedora) values 
+  ('The Last of Us 2', 1, 'R$149.99', 4, 1);
 
 insert into usuario (nome, email) values
-  ('Felipe Santos Almeida', 'felipaocomepao@hotmail.com'), ('Julio Santana Guimarães', 'juliosa@gmail.com'), ('João Pedro Garcia de Morais', 'pedrojacks47@hotmail.comhihiihi');
+  ('Felipe Santos Almeida', 'felipaocomepao@hotmail.com'), ('Julio Santana Guimarães', 'juliosa@gmail.com'), ('João Pedro Garcia de Morais', 'pedrojacks47@hotmail.com');
 
 insert into itemusuario (item, usuario, qtd) values
     (1, 2, '1'), (1, 3, '2'), (3, 1, '1');
