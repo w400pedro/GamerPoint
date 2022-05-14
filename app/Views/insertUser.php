@@ -26,7 +26,7 @@
     border-radius: 5%;
 }
 .register-form{
-    margin-top: 25%;
+    margin-top: 20%;
 }
 </style>
 <body>

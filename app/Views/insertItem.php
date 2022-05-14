@@ -2,8 +2,6 @@
 <html lang="pt-br">
 <?php include 'includes/head.php' ?>
 <body>
-<?php include 'includes/navbar.php' ?>
-
 <style>
     body{
     padding: 0;
@@ -28,7 +26,7 @@
     border-radius: 5%;
 }
 .register-form{
-    margin-top: 25%;
+    margin-top: 10%;
 }
 </style>
 <body>
@@ -42,7 +40,7 @@
     
 } ?>
 <br>
-<h2 class="showgames-h2">Cadastrar Usuário</h2>
+<h2 class="showgames-h2">Cadastrar Item</h2>
 <div class="div">
 
     <form action="/cadastraitem" method="POST" class="register-form">
@@ -50,11 +48,12 @@
     <br>
     <input placeholder="Digite o valor do item" name="preco" type="text" class="form-control" required>
     <br>
-   <label for='categoria'>Selecione a categoria: </label> <select id='categoria'>
+   <label for='categoria'>Selecione a categoria: </label> <select id='categoria' name="categoria">
     <option value=""></option>
     </select>
+    <br><br>
 
-    <input type="submit" value="Cadastrar Usuário" class="btn btn-primary mb-2">
+    <input type="submit" value="Cadastrar Item" class="btn btn-primary mb-2">
 </form>
 </div>    
 
