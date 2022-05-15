@@ -1,0 +1,173 @@
+ERROR - 2022-05-15 04:32:48 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+CRITICAL - 2022-05-15 04:32:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xamppPHP8\htdocs\GamerPoint\app\Models\ItensModel.php(13): CodeIgniter\BaseModel->findAll()
+#5 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(32): App\Models\ItensModel->getAll()
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#8 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#11 {main}
+ERROR - 2022-05-15 04:33:02 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+CRITICAL - 2022-05-15 04:33:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xamppPHP8\htdocs\GamerPoint\app\Models\ItensModel.php(13): CodeIgniter\BaseModel->findAll()
+#5 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(32): App\Models\ItensModel->getAll()
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#8 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#11 {main}
+ERROR - 2022-05-15 04:33:13 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+CRITICAL - 2022-05-15 04:33:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#5 C:\xamppPHP8\htdocs\GamerPoint\app\Models\UsersModel.php(23): CodeIgniter\Model->insert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\userController.php(27): App\Models\UsersModel->insert_user(Array)
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\userController->cadastrarusuario()
+#8 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\userController))
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#12 {main}
+ERROR - 2022-05-15 04:33:56 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+CRITICAL - 2022-05-15 04:33:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#5 C:\xamppPHP8\htdocs\GamerPoint\app\Models\UsersModel.php(23): CodeIgniter\Model->insert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\userController.php(27): App\Models\UsersModel->insert_user(Array)
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\userController->cadastrarusuario()
+#8 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\userController))
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#12 {main}
+CRITICAL - 2022-05-15 04:37:00 --> Undefined array key "genero"
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Views\showItens.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xamppPHP8\\ht...', 40)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\View\View.php(210): include('C:\\xamppPHP8\\ht...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Common.php(1089): CodeIgniter\View\View->render('showItens', Array, true)
+#4 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): view('showItens', Array)
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#10 {main}
+CRITICAL - 2022-05-15 04:38:30 --> syntax error, unexpected token "return", expecting "," or ";"
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamppPHP8\\ht...')
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#8 {main}
+CRITICAL - 2022-05-15 04:38:37 --> Array to string conversion
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xamppPHP8\\ht...', 33)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-15 04:38:46 --> Array to string conversion
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xamppPHP8\\ht...', 33)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-15 04:39:04 --> Array to string conversion
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xamppPHP8\\ht...', 33)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-15 04:39:05 --> Array to string conversion
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xamppPHP8\\ht...', 33)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-15 04:39:24 --> Undefined array key "nome"
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xamppPHP8\\ht...', 33)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-15 04:39:30 --> Undefined array key "id"
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xamppPHP8\\ht...', 33)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-15 04:39:49 --> Array to string conversion
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xamppPHP8\\ht...', 33)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-15 04:40:18 --> syntax error, unexpected token "}"
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamppPHP8\\ht...')
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#8 {main}
+CRITICAL - 2022-05-15 04:41:13 --> Undefined array key 0
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Views\showItens.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xamppPHP8\\ht...', 37)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\View\View.php(210): include('C:\\xamppPHP8\\ht...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Common.php(1089): CodeIgniter\View\View->render('showItens', Array, true)
+#4 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): view('showItens', Array)
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#10 {main}
+CRITICAL - 2022-05-15 04:41:18 --> Undefined constant "id"
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\View\View.php(210): include()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Common.php(1089): CodeIgniter\View\View->render('showItens', Array, true)
+#3 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(33): view('showItens', Array)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showItens()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#9 {main}

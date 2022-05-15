@@ -26,4 +26,10 @@ class itemController extends BaseController
         //ve o que fiz no userController e faz semelhante aqui k
 
     }
+
+    public function showItens(){
+        $item_model = new ItensModel();
+        $result = $item_model->getAll();
+        return view ('showItens', ['item' => $result]);
+    }
 }

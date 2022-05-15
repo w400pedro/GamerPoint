@@ -16,7 +16,7 @@
         <a class="nav-link" href="/item">Cadastrar Itens</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Itens</a>
+        <a class="nav-link" href="/itens">Itens</a>
       </li>
     </ul>
   </div>

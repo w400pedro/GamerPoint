@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\itemController;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -33,8 +35,11 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'userController::showCadastro');
 $routes->post('/register', 'userController::cadastrarUsuario');
+$routes->get('/itens', 'itemController::showItens');
 $routes->get('/item', 'itemController::showInsert');
 $routes->post('/cadastraitem', 'itemController::cadastrarItem'); 
+$routes->get('/categorias', 'categoriaController::showInsert');
+$routes->post('/cadastracategoria', 'categoriaController::cadastrarCategoria');
 
 /*
  * --------------------------------------------------------------------
