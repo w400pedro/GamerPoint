@@ -21,11 +21,38 @@ class itemController extends BaseController
         return view('insertItem', ['result'=>$resultarray]);
     }
 
-    public function cadastrarItem()
-    {
-        //ve o que fiz no userController e faz semelhante aqui k
+    public function cadastraritem(){
+		$rules = [
+            'nome' => 'required',
+            'categoria' => 'required',
+            'preco' => 'required',
+            'gamegenero' => 'required',
+            'desenvolvedora' => 'required'
+        ];
+		$item_model = new ItensModel();
 
-    }
+		if ($this->validate($rules)){
+			$data = array(
+                'nome' => $this->request->getVar('nome'), // 'nome' = $_POST['nome']
+                'categoria' => $this->request->getVar('categoria'),
+                'preco' => $this->request->getVar('preco'),
+                'gamegenero' => $this->request->getVar('gamegenero'),
+                'desenvolvedora' => $this->request->getVar('desenvolvedora')
+			);
+            print_r($data);
+            if($data["categoria"] != 1){ // tirando genero e desenvolvedora se não for jogo
+                unset($data["gamegenero"]);
+                unset($data["desenvolvedora"]);
+            }
+
+			$item_model->insertItem($data);
+			$this->session->setFlashdata('msg', 'Item Cadastrado com sucesso'); //Envia mensagem para o view
+ 			return redirect()->to(base_url('/item'));	 
+		}else{
+			$this->session->setFlashdata('msg', 'Ops! Não foi possivel cadastrar o item');
+			return redirect()->to(base_url('/item'));
+		}
+	}
 
     public function showItens(){
         $item_model = new ItensModel();

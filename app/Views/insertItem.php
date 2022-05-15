@@ -80,7 +80,7 @@
                      } ?>
                     </select>
                     <br>   <br> 
-                    <label for='desenvolvedora'>Selecione o genero: </label> <select id='desenvolvedora' name="desenvolvedora">
+                    <label for='desenvolvedora'>Selecione o genero: </label> <select id='gamegenero' name="gamegenero">
                         <?php foreach($result[2] as $genero) {
                        echo  "<option value=" . $genero['id'] . ">" . $genero['nome'] . "</option>";
                      } ?>

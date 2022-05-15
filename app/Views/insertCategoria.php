@@ -35,13 +35,18 @@
 
     <body>
     <?php include 'includes/navbar.php' ?>
+    <?php if (session()->get('msg')) {
+            echo "<div class='alert alert-info' role='alert'>";
+
+            echo "<b>" . session()->getFlashdata("msg") . "</b></div>";
+        } ?>
     <h2 class="showgames-h2">Cadastrar Categoria</h2>
 <div class="div">
 
-    <form action="/register" method="POST" class="register-form">
-    <input placeholder="Digite o nome do usuário" name="nome" type="text" id="btn-name" class="form-control" required>  
+    <form action="/cadastracategoria" method="POST" class="register-form">
+    <input placeholder="Digite o nome da Categoria" name="nome" type="text" id="btn-name" class="form-control" required>  
     <br><br>
-    <input type="submit" value="Cadastrar Usuário" class="btn btn-primary mb-2">
+    <input type="submit" value="Cadastrar Categoria" class="btn btn-primary mb-2">
 </form>
 </div>    
 

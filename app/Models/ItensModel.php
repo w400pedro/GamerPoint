@@ -15,8 +15,8 @@ class ItensModel extends Model {
         return $this->asArray()->where(['id' == $id])->first();
     }
 
-    public function insertItem(){
-
+    public function insertItem($data){
+        return $this->insert($data);
 
     }
 

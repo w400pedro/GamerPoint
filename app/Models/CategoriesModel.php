@@ -15,4 +15,9 @@ class CategoriesModel extends Model {
         }
         return $this->asArray()->where(['id' => $id])->first();
     }
+
+    public function insert_categoria($data)
+    {
+        return $this->insert($data);
+    }
 }

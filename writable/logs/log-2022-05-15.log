@@ -171,3 +171,37 @@ CRITICAL - 2022-05-15 04:41:18 --> Undefined constant "id"
 #7 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
 #9 {main}
+CRITICAL - 2022-05-15 06:28:30 --> Undefined variable: data
+#0 C:\xampp\htdocs\GamerPoint\app\Models\ItensModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\GamerPoint\app\Controllers\itemController.php(42): App\Models\ItensModel->insertItem(Array)
+#2 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->cadastraritem()
+#3 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#4 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-15 06:29:44 --> Array to string conversion
+#0 C:\xampp\htdocs\GamerPoint\app\Controllers\itemController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 42, Array)
+#1 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->cadastraritem()
+#2 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-15 06:30:02 --> Undefined variable: data
+#0 C:\xampp\htdocs\GamerPoint\app\Models\ItensModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\GamerPoint\app\Controllers\itemController.php(43): App\Models\ItensModel->insertItem(Array)
+#2 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->cadastraritem()
+#3 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#4 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-15 06:36:48 --> Undefined index: catergoria
+#0 C:\xampp\htdocs\GamerPoint\app\Controllers\itemController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 42, Array)
+#1 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->cadastraritem()
+#2 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#3 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
