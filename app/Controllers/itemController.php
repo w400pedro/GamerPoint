@@ -1,18 +1,29 @@
 <?php
-namespace App\Controllers;
-use App\Models\ItensModel;
-use App\Models\CategoriasModel;
 
-class itemController extends BaseController {
-    public function showInsert(){
-        //AQUI TU CHAMA A FUNCAO DO MODELS PRA PEGAR TODAS CATEGORIAS e passa por parametro pra view return view('insertItem', $result);
-        return view('insertItem');
+namespace App\Controllers;
+use CodeIgniter\Controller;
+use App\Models\ItensModel;
+use App\Models\CategoriesModel;
+use App\Models\DevelopersModel;
+use App\Models\GendersModel;
+
+class itemController extends BaseController
+{
+      public function showInsert()
+    {
+        $desenvolvedora_model = new DevelopersModel();
+        $categoria_model = new CategoriesModel();
+        $genero_model = new GendersModel();
+        $result1 = $categoria_model->getAll();
+        $result2 = $desenvolvedora_model->getAll();
+        $result3 = $genero_model->getAll();
+        $resultarray = [$result1, $result2, $result3];
+        return view('insertItem', ['result'=>$resultarray]);
     }
 
-    public function cadastrarItem(){
+    public function cadastrarItem()
+    {
         //ve o que fiz no userController e faz semelhante aqui k
 
     }
-
 }
-

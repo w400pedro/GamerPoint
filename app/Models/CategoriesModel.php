@@ -3,17 +3,16 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class CategoriasModel extends Model {
+class CategoriesModel extends Model {
     protected $table = 'categoria';
     protected $primaryKey = 'id';
     protected $allowedFields = ['nome'];
 
-    public function getAll($id = null){
-        if ($id == null){ //AQUI TU PEGA O NOME DAS CATEGORIAS PRA USAR NO SELECT DA ABA DE ITENS LA
+    public function getAll($id = null)
+    {
+        if ($id == null) {
             return $this->findAll();
         }
         return $this->asArray()->where(['id' => $id])->first();
     }
 }
-
-?>

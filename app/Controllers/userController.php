@@ -1,5 +1,8 @@
 <?php
 namespace App\Controllers;
+
+use CodeIgniter\Controller;
+
 use App\Models\UsersModel;
 
 
@@ -18,7 +21,7 @@ class userController extends BaseController {
 
 		if ($this->validate($rules)){
 			$data = array(
-                'nome' => $this->request->getVar('nome'),
+                'nome' => $this->request->getVar('nome'), // 'nome' = $_POST['nome']
                 'email' => $this->request->getVar('email')
 			);
 			$user_model->insert_user($data);
@@ -27,9 +30,7 @@ class userController extends BaseController {
 		}else{
 			$this->session->setFlashdata('msg', 'Ops! Não foi possivel cadastrar o usuário');
 			return redirect()->to(base_url('/'));
-					
 		}
 	}
 
 }
-?>
