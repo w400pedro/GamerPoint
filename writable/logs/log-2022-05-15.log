@@ -205,3 +205,17 @@ CRITICAL - 2022-05-15 06:36:48 --> Undefined index: catergoria
 #4 C:\xampp\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+CRITICAL - 2022-05-15 20:13:19 --> Class 'App\Models\DevelopersModel' not found
+#0 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->showInsert()
+#1 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#2 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-15 20:20:18 --> Class 'App\Controllers\GeneroModel' not found
+#0 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\desenvolvedoraController->cadastrarDesenvolvedora()
+#1 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\desenvolvedoraController))
+#2 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
