@@ -35,7 +35,7 @@ CREATE TABLE item (
   id int not null AUTO_INCREMENT,
   nome varchar(100) not null,
   categoria int not null,
-  preco varchar(100) not null,
+  preco varchar(15) not null,
   gamegenero int,
   desenvolvedora int,
   foreign key (categoria) references categoria(id),

@@ -7,7 +7,7 @@ class desenvolvedoraController extends BaseController
 {
       public function showInsert()
     {
-        return view('insertDesenvolvedora'); //n testei se ta funcionando
+        return view('insertDesenvolvedora');
     }
 
     public function cadastrarDesenvolvedora()
@@ -19,10 +19,10 @@ class desenvolvedoraController extends BaseController
 
 		if ($this->validate($rules)){
 			$data = array(
-                'nome' => $this->request->getVar('nome'), // 'nome' = $_POST['nome']
+                'nome' => $this->request->getVar('nome'),
 			);
 			$desenvolvedora_model->insert_desenvolvedora($data);
-			$this->session->setFlashdata('msg', 'Desenvolvedora Cadastrada com sucesso'); //Envia mensagem para o view
+			$this->session->setFlashdata('msg', 'Desenvolvedora Cadastrada com sucesso');
  			return redirect()->to(base_url('/desenvolvedora'));	 
 		}else{
 			$this->session->setFlashdata('msg', 'Ops! Não foi possivel cadastrar a Desenvolvedora');

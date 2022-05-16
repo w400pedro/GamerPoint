@@ -6,6 +6,7 @@ use App\Models\ItensModel;
 use App\Models\CategoriesModel;
 use App\Models\DevelopersModel;
 use App\Models\GendersModel;
+use App\Models\UsersModel;
 
 class itemController extends BaseController
 {
@@ -33,20 +34,19 @@ class itemController extends BaseController
 
 		if ($this->validate($rules)){
 			$data = array(
-                'nome' => $this->request->getVar('nome'), // 'nome' = $_POST['nome']
+                'nome' => $this->request->getVar('nome'),
                 'categoria' => $this->request->getVar('categoria'),
                 'preco' => $this->request->getVar('preco'),
                 'gamegenero' => $this->request->getVar('gamegenero'),
                 'desenvolvedora' => $this->request->getVar('desenvolvedora')
 			);
-            print_r($data);
-            if($data["categoria"] != 1){ // tirando genero e desenvolvedora se não for jogo
+            if($data["categoria"] != 1){
                 unset($data["gamegenero"]);
                 unset($data["desenvolvedora"]);
             }
 
 			$item_model->insertItem($data);
-			$this->session->setFlashdata('msg', 'Item Cadastrado com sucesso'); //Envia mensagem para o view
+			$this->session->setFlashdata('msg', 'Item Cadastrado com sucesso');
  			return redirect()->to(base_url('/item'));	 
 		}else{
 			$this->session->setFlashdata('msg', 'Ops! Não foi possivel cadastrar o item');
@@ -56,7 +56,10 @@ class itemController extends BaseController
 
     public function showItens(){
         $item_model = new ItensModel();
-        $result = $item_model->getAll();
-        return view ('showItens', ['item' => $result]);
+        $usuario_model = new UsersModel();
+        $result1 = $item_model->getAll();
+        $result2 = $usuario_model->getAll();
+        $result = [$result1, $result2];
+        return view ('showItens', ['result' => $result]);
     }
 }
