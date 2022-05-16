@@ -47,7 +47,6 @@ CREATE TABLE item (
 CREATE TABLE itemusuario (
   item int not null,
   usuario int not null,
-  qtd varchar(3) not null DEFAULT 1,
   foreign key (item) references item(id),
   foreign key (usuario) references usuario(id),
   primary key (usuario, item)
@@ -71,5 +70,5 @@ insert into item (nome, categoria, preco, gamegenero, desenvolvedora) values
 insert into usuario (nome, email) values
   ('Felipe Santos Almeida', 'felipaocomepao@hotmail.com'), ('Julio Santana Guimarães', 'juliosa@gmail.com'), ('João Pedro Garcia de Morais', 'pedrojacks47@hotmail.com');
 
-insert into itemusuario (item, usuario, qtd) values
-    (1, 2, '1'), (1, 3, '2'), (3, 1, '1');
+insert into itemusuario (item, usuario) values
+    (1, 2), (1, 3), (3, 1);
