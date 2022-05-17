@@ -3,6 +3,7 @@
 <?php include 'includes/head.php' ?>
 
 <body>
+    
     <style>
                 body {
             padding: 0;
@@ -36,6 +37,13 @@ $(document).ready(function(){
 });
     </script>
     <?php include 'includes/navbar.php' ?>
+    <?php if(session()->get('msg')){
+
+echo "<div class='alert alert-info' role='alert'>";
+
+echo "<b>".session()->getFlashdata("msg")."</b></div>";
+
+} ?>
    
     <div class="center">
     <h2 class="showgames-h2">Todos Itens do Site</h2>

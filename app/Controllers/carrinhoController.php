@@ -14,14 +14,29 @@ class carrinhoController extends BaseController
     {
         $rules = [
             'usuario' => 'required',
-            'item' => 'required'
+            'comprar' => 'required'
         ];
 		$carrinho_model = new CarrinhoModel();
 
-        $a = $this->request->getVar('usuario');
-        echo($a);
-        echo("<br>");
-        $b = $this->request->getVar('comprar[2]');
-        echo($b);
+        
+        $compras = $this->request->getVar('comprar');
+        
+
+
+foreach ($compras as $itens) {
+
+        if ($this->validate($rules)){
+			$data = array(
+                'item' => $itens,
+                'usuario' => $this->request->getVar('usuario') // 'nome' = $_POST['nome']
+			);
+			$carrinho_model->insert_carrinho($data);
+		}else{
+			$this->session->setFlashdata('msg', 'Ops! Não foi possivel comprar os itens');
+			return redirect()->to(base_url('/itens'));
+		}
+   }
+   $this->session->setFlashdata('msg', 'Itens Comprados com sucesso'); //Envia mensagem para o view
+   return redirect()->to(base_url('/itens'));	 
     }
 }

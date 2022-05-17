@@ -146,3 +146,11 @@ CRITICAL - 2022-05-16 20:47:38 --> Array to string conversion
 #4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
 #6 {main}
+CRITICAL - 2022-05-16 21:08:14 --> Undefined variable: data
+#0 C:\xampp\htdocs\GamerPoint\app\Controllers\carrinhoController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#2 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#3 C:\xampp\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

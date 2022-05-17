@@ -45,11 +45,12 @@ CREATE TABLE item (
 );
 
 CREATE TABLE itemusuario (
+  id int not null AUTO_INCREMENT,
   item int not null,
   usuario int not null,
   foreign key (item) references item(id),
   foreign key (usuario) references usuario(id),
-  primary key (usuario, item)
+  primary key (id)
 );
 
 insert into gamegenero (nome) values

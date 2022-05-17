@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class CarrinhoModel extends Model {
     protected $table = 'itemusuario';
-    protected $primaryKey = 'usuario, item';
+    protected $primaryKey = 'id';
     protected $allowedFields = ['item' ,'usuario'];
 
     public function getAll($id = null)
@@ -16,7 +16,7 @@ class CarrinhoModel extends Model {
         return $this->asArray()->where(['id' => $id])->first();
     }
 
-    public function insert_carinho($data)
+    public function insert_carrinho($data)
     {
         return $this->insert($data);
     }
