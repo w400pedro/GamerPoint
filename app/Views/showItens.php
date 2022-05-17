@@ -69,7 +69,7 @@ $(document).ready(function(){
 
         <?php foreach ($result[0] as $itens) { ?>
             <tr>
-                <?php echo "<td><input type='checkbox' name='comprar' class='form-check-input' value='".$itens['id']."'></td>";?>
+                <?php echo "<td><input type='checkbox' name='comprar[]' class='form-check-input' value='".$itens['id']."'></td>";?>
                 <?php echo "<td> ".$itens['id']." </td>"; ?>
                 <?php echo "<td> ".$itens['nome']." </td>"; ?>
                 <?php echo "<td> R$".$itens['preco']." </td>"; ?>

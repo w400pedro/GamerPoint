@@ -21,7 +21,7 @@ class carrinhoController extends BaseController
         $a = $this->request->getVar('usuario');
         echo($a);
         echo("<br>");
-        $b = $this->request->getVar('comprar');
+        $b = $this->request->getVar('comprar[2]');
         echo($b);
     }
 }
