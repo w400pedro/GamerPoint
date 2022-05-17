@@ -49,13 +49,14 @@ echo "<b>".session()->getFlashdata("msg")."</b></div>";
     <h2 class="showgames-h2">Todos Itens do Site</h2>
     <br>
 
-    <form method="GET">
-        <input type="text" placeholder="Filtro por nome">
-        <input type="submit" value="Filtrar" class="btn btn-primary">
+    <form method="GET" action="/busca">
+        <input type="text" placeholder="Digite o nome do produto" name="busca">
+        <input type="submit" value="Buscar" class="btn btn-primary">
     </form>
 <br>
 <form action="/carrinho" method="POST">
-   <label for="userselect" class="userlabel">Selecione o usuário que fará a compra: </label> <select name="usuario" class="chosen" id="userselect">
+ <select name="usuario" class="chosen" id="userselect" required>
+       <option value="" disabled selected>Selecione o Usuário que fará a compra</option>
     <?php foreach ($result[1] as $usuarios) { 
         echo  "<option value=" . $usuarios['id'] . ">" . $usuarios['email'] . "</option>";
          } ?>

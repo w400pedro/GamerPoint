@@ -37,6 +37,7 @@ $routes->get('/', 'userController::showCadastro');
 $routes->post('/register', 'userController::cadastrarUsuario');
 $routes->get('/itens', 'itemController::showItens');
 $routes->get('/item', 'itemController::showInsert');
+$routes->add('/busca', 'itemController::buscaItem');
 $routes->post('/cadastraitem', 'itemController::cadastrarItem'); 
 $routes->get('/categorias', 'categoriaController::showInsert');
 $routes->get('/desenvolvedora', 'desenvolvedoraController::showInsert');

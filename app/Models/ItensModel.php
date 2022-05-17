@@ -16,5 +16,9 @@ class ItensModel extends Model {
 
     }
 
+    public function getAllSearch($data){
+        return $this->select('item.id,item.nome, item.preco, item.gamegenero, categoria.nome as categoria, desenvolvedora.nome as desenvolvedora, gamegenero.nome as genero')->join('categoria', 'categoria.id = item.categoria')->join('desenvolvedora', 'desenvolvedora.id = item.desenvolvedora', 'left')->join('gamegenero', 'gamegenero.id = item.gamegenero', 'left')->like('item.nome', $data)->orderby('1 asc')->findAll();
+    }
+
 }
 

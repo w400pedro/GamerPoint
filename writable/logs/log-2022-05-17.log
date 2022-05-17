@@ -1,0 +1,181 @@
+CRITICAL - 2022-05-17 02:18:45 --> foreach() argument must be of type array|object, null given
+#0 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\carrinhoController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xamppPHP8\\ht...', 26)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#6 {main}
+CRITICAL - 2022-05-17 02:19:24 --> syntax error, unexpected token "else"
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamppPHP8\\ht...')
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#8 {main}
+CRITICAL - 2022-05-17 03:36:50 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xamppPHP8\htdocs\GamerPoint\system\Model.php on line 728
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('item.nome', NULL)
+#1 C:\xamppPHP8\htdocs\GamerPoint\app\Models\ItensModel.php(20): CodeIgniter\Model->__call('like', Array)
+#2 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(31): App\Models\ItensModel->getAllSearch(NULL)
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->buscaItem()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#8 {main}
+CRITICAL - 2022-05-17 03:37:11 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xamppPHP8\htdocs\GamerPoint\system\Model.php on line 728
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('item.nome', NULL)
+#1 C:\xamppPHP8\htdocs\GamerPoint\app\Models\ItensModel.php(20): CodeIgniter\Model->__call('like', Array)
+#2 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(31): App\Models\ItensModel->getAllSearch(NULL)
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->buscaItem()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#8 {main}
+CRITICAL - 2022-05-17 03:40:44 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xamppPHP8\htdocs\GamerPoint\system\Model.php on line 728
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('gamegenero.nome', NULL)
+#1 C:\xamppPHP8\htdocs\GamerPoint\app\Models\ItensModel.php(20): CodeIgniter\Model->__call('like', Array)
+#2 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\itemController.php(31): App\Models\ItensModel->getAllSearch(NULL)
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->buscaItem()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#8 {main}
+CRITICAL - 2022-05-17 03:42:20 --> Undefined constant "App\Controllers\data"
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->buscaItem()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+CRITICAL - 2022-05-17 03:42:26 --> Undefined constant "App\Controllers\data"
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\itemController->buscaItem()
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\itemController))
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#5 {main}
+ERROR - 2022-05-17 03:46:51 --> Duplicate entry '2-1' for key 'PRIMARY'
+CRITICAL - 2022-05-17 03:46:51 --> Duplicate entry '2-1' for key 'PRIMARY'
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamppPHP8\htdocs\GamerPoint\app\Models\CarrinhoModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\carrinhoController.php(33): App\Models\CarrinhoModel->insert_carrinho(Array)
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#14 {main}
+ERROR - 2022-05-17 03:47:01 --> Duplicate entry '2-1' for key 'PRIMARY'
+CRITICAL - 2022-05-17 03:47:01 --> Duplicate entry '2-1' for key 'PRIMARY'
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamppPHP8\htdocs\GamerPoint\app\Models\CarrinhoModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\carrinhoController.php(33): App\Models\CarrinhoModel->insert_carrinho(Array)
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#14 {main}
+ERROR - 2022-05-17 03:47:15 --> Duplicate entry '2-1' for key 'PRIMARY'
+CRITICAL - 2022-05-17 03:47:15 --> Duplicate entry '2-1' for key 'PRIMARY'
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamppPHP8\htdocs\GamerPoint\app\Models\CarrinhoModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\carrinhoController.php(33): App\Models\CarrinhoModel->insert_carrinho(Array)
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#14 {main}
+ERROR - 2022-05-17 03:48:11 --> Duplicate entry '4-1' for key 'PRIMARY'
+CRITICAL - 2022-05-17 03:48:11 --> Duplicate entry '4-1' for key 'PRIMARY'
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamppPHP8\htdocs\GamerPoint\app\Models\CarrinhoModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\carrinhoController.php(33): App\Models\CarrinhoModel->insert_carrinho(Array)
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#14 {main}
+ERROR - 2022-05-17 03:48:31 --> Duplicate entry '1-1' for key 'PRIMARY'
+CRITICAL - 2022-05-17 03:48:31 --> Duplicate entry '1-1' for key 'PRIMARY'
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamppPHP8\htdocs\GamerPoint\app\Models\CarrinhoModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\carrinhoController.php(33): App\Models\CarrinhoModel->insert_carrinho(Array)
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#14 {main}
+ERROR - 2022-05-17 03:48:43 --> Duplicate entry '1-1' for key 'PRIMARY'
+CRITICAL - 2022-05-17 03:48:43 --> Duplicate entry '1-1' for key 'PRIMARY'
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamppPHP8\htdocs\GamerPoint\app\Models\CarrinhoModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\carrinhoController.php(33): App\Models\CarrinhoModel->insert_carrinho(Array)
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#14 {main}
+ERROR - 2022-05-17 03:56:49 --> Duplicate entry '1-1' for key 'PRIMARY'
+CRITICAL - 2022-05-17 03:56:49 --> Duplicate entry '1-1' for key 'PRIMARY'
+#0 C:\xamppPHP8\htdocs\GamerPoint\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xamppPHP8\htdocs\GamerPoint\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamppPHP8\htdocs\GamerPoint\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamppPHP8\htdocs\GamerPoint\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamppPHP8\htdocs\GamerPoint\app\Models\CarrinhoModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xamppPHP8\htdocs\GamerPoint\app\Controllers\carrinhoController.php(32): App\Models\CarrinhoModel->insert_carrinho(Array)
+#9 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(832): App\Controllers\carrinhoController->cadastrarCarrinho()
+#10 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrinhoController))
+#11 C:\xamppPHP8\htdocs\GamerPoint\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xamppPHP8\htdocs\GamerPoint\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xamppPHP8\htdocs\GamerPoint\system\Commands\Server\rewrite.php(43): require_once('C:\\xamppPHP8\\ht...')
+#14 {main}

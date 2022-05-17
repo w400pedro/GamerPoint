@@ -22,13 +22,12 @@ class carrinhoController extends BaseController
         $compras = $this->request->getVar('comprar');
         
 
-
+        if($compras){
 foreach ($compras as $itens) {
-
         if ($this->validate($rules)){
 			$data = array(
                 'item' => $itens,
-                'usuario' => $this->request->getVar('usuario') // 'nome' = $_POST['nome']
+                'usuario' => $this->request->getVar('usuario')
 			);
 			$carrinho_model->insert_carrinho($data);
 		}else{
@@ -36,7 +35,11 @@ foreach ($compras as $itens) {
 			return redirect()->to(base_url('/itens'));
 		}
    }
-   $this->session->setFlashdata('msg', 'Itens Comprados com sucesso'); //Envia mensagem para o view
+   $this->session->setFlashdata('msg', 'Itens Comprados com sucesso');
    return redirect()->to(base_url('/itens'));	 
+}else{
+        $this->session->setFlashdata('msg', 'Ops! Não foi possivel comprar os itens');
+        return redirect()->to(base_url('/itens'));
     }
+}
 }

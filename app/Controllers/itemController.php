@@ -22,6 +22,19 @@ class itemController extends BaseController
         return view('insertItem', ['result'=>$resultarray]);
     }
 
+    public function buscaItem() {
+        $item_model = new ItensModel();
+        $usuario_model = new UsersModel();
+        $data = array(
+            'busca' => $this->request->getVar('busca'),
+        );
+        $result1 = $item_model->getAllSearch($data['busca']);
+        $result2 = $usuario_model->getAll();
+        $result = [$result1, $result2];
+        return view ('showItens', ['result' => $result]);
+    }
+
+
     public function cadastraritem(){
 		$rules = [
             'nome' => 'required',
@@ -44,7 +57,6 @@ class itemController extends BaseController
                 unset($data["gamegenero"]);
                 unset($data["desenvolvedora"]);
             }
-
 			$item_model->insertItem($data);
 			$this->session->setFlashdata('msg', 'Item Cadastrado com sucesso');
  			return redirect()->to(base_url('/item'));	 
