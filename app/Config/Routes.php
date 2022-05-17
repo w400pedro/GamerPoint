@@ -44,6 +44,7 @@ $routes->get('/genero', 'generoController::showInsert');
 $routes->post('/cadastracategoria', 'categoriaController::cadastrarCategoria');
 $routes->post('/cadastragenero', 'generoController::cadastrarGenero');
 $routes->post('/cadastradesenvolvedora', 'desenvolvedoraController::cadastrarDesenvolvedora');
+$routes->post('/carrinho', 'carrinhoController::cadastrarCarrinho');
 
 /*
  * --------------------------------------------------------------------
