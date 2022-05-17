@@ -42,9 +42,7 @@ $(document).ready(function(){
 echo "<div class='alert alert-info' role='alert'>";
 
 echo "<b>".session()->getFlashdata("msg")."</b></div>";
-
 } ?>
-   
     <div class="center">
     <h2 class="showgames-h2">Todos Itens do Site</h2>
     <br>
@@ -62,8 +60,8 @@ echo "<b>".session()->getFlashdata("msg")."</b></div>";
          } ?>
     </select>
     <br><br>
-    <button class="btn btn-primary" type="submit">Comprar itens selecionados</button>
-    </div>
+    <button class="btn btn-success" type="submit">Comprar itens selecionados</button>
+    </div><br>
 
     <table class="table">
         <tr>
